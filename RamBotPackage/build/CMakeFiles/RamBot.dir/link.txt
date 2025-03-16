@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/RamBot.dir/src/main.cpp.o -o RamBot  /usr/lib/libdpp.so 

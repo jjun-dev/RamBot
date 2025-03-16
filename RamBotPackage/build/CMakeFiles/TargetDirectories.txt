@@ -1,3 +1,0 @@
-/home/jjun010108/DiscordBot/RamBotPackage/build/CMakeFiles/RamBot.dir
-/home/jjun010108/DiscordBot/RamBotPackage/build/CMakeFiles/edit_cache.dir
-/home/jjun010108/DiscordBot/RamBotPackage/build/CMakeFiles/rebuild_cache.dir
