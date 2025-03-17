@@ -1,25 +1,11 @@
 #include <dpp/dpp.h>
 #include <iostream>
-#include <fstream>
 #include <string>
 #include "Constants.h"
 
-// std::string getToken(const std::string& filename) {
-//     std::ifstream file(filename);
-//     if(!file) {
-//         std::cerr << "Error : Can't find token file" << std::endl;
-//         exit(1);
-//     }
-
-//     std::string token;
-//     std::getline(file, token);
-//     return token;
-// }
-
-//const std::string BOT_TOKEN = getToken("../token.txt");
+const long int GUILD_ID = GI_1;
 int main() {
 
-    //const long int GUILD_ID =  1134388091864494112;
     dpp::cluster bot(BOT_TOKEN);
 
     bot.on_log(dpp::utility::cout_logger());
