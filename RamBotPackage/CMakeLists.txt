@@ -6,6 +6,8 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
+    src/commands.cpp
+    src/basic_commands.cpp
 )
 
 find_package(DPP REQUIRED)
