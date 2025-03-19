@@ -11,6 +11,7 @@ int main() {
     bot.on_log(dpp::utility::cout_logger());
 
     bot.on_slashcommand([&bot](const dpp::slashcommand_t& event) {
+        std::cout << "event" << std::endl;
         commands::handleCommands(event);
     });
 

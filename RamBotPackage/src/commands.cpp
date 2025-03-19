@@ -19,6 +19,7 @@ void commands::handleCommands(const dpp::slashcommand_t& event)
         dpp::guild* g = dpp::find_guild(event.command.guild_id);
         if (!g->connect_member_voice(event.command.get_issuing_user().id)) {
             event.reply("Please join in a voice channel first.");
+            return;
         }
         event.reply("Joined voice channel.");
     }
