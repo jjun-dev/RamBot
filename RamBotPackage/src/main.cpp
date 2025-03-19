@@ -10,11 +10,11 @@ int main() {
 
     bot.on_log(dpp::utility::cout_logger());
 
-    bot.on_slashcommand([&bot](const dpp::slashcommand_t & event) {
+    bot.on_slashcommand([&bot](const dpp::slashcommand_t& event) {
         commands::handleCommands(event);
     });
 
-    bot.on_ready([&bot](const dpp::ready_t & event) {
+    bot.on_ready([&bot](const dpp::ready_t& event) {
         bot.guild_bulk_command_create(commands::returnSlashCommands(bot), GUILD_ID);
     });
 

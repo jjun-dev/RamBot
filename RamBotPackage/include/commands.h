@@ -5,7 +5,7 @@
 
 namespace commands {
     void handleCommands(const dpp::slashcommand_t& event);
-        const std::vector<dpp::slashcommand> returnSlashCommands(dpp::cluster& bot);
+        std::vector<dpp::slashcommand> returnSlashCommands(dpp::cluster& bot);
 };
 
 
